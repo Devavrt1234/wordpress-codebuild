@@ -17,6 +17,7 @@ if [ "x$BUILD_ENV" = "xprod" ]; then
 else
     echo "WordPress configurations for development"
     # Debug in dev
+    wp config create
 
 fi
 
