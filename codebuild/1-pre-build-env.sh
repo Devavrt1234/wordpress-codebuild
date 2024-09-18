@@ -12,8 +12,8 @@ rm -f /usr/local/bin/php*
 rm -f /usr/local/bin/phar*
 rm -f /usr/local/bin/pear*
 rm -f /usr/local/bin/pecl*
-apt update 
-apt install -y jq git php7.2 php7.2-mysql php7.2-zip php7.2-xml php7.2-mbstring mysql-client
+sudo apt update 
+sudo apt install -y jq git php7.2 php7.2-mysql php7.2-zip php7.2-xml php7.2-mbstring mysql-client
 
 echo "Add .htaccess for Apache Server..."
 # echo '
