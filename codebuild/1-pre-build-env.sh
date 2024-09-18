@@ -13,7 +13,7 @@ rm -f /usr/local/bin/phar*
 rm -f /usr/local/bin/pear*
 rm -f /usr/local/bin/pecl*
 sudo apt update 
-sudo apt install -y jq git php8.2 php8.2-mysql php8.2-zip php8.2-xml php8.2-mbstring mysql-client
+sudo apt-get install -y php8.1-cli php8.1-common php8.1-mysql php8.1-zip php8.1-gd php8.1-mbstring php8.1-curl php8.1-xml php8.1-bcmath
 
 echo "Add .htaccess for Apache Server..."
 # echo '
