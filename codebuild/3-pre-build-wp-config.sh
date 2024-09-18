@@ -15,9 +15,8 @@ echo "Install WordPress Settings..."
 if [ "x$BUILD_ENV" = "xprod" ]; then
     echo "WordPress configurations for production"
 else
-    echo "WordPress configurations for development"
+    echo "WordPress configurations for development will be done manually"
     # Debug in dev
-    wp config create
 
 fi
 
