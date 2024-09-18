@@ -10,7 +10,7 @@ echo "Running script: $(basename -- "$0")"
 echo "Retrieve values from AWS Secret Manager..."
 DB_HOST="database-1.cr8mc00ii2ac.eu-north-1.rds.amazonaws.com"  # Hostname of the database
 DB_PORT="3306"                     # Default MySQL port
-DB_NAME="mydb"             # Name of your WordPress database
+DB_NAME="wordpress_db"             # Name of your WordPress database
 DB_USERNAME="Deep"       # Database user
 DB_PASSWORD="8SjhoTfVz2GAcADVJcor"    # User's password
 
