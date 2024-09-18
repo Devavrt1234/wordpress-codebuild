@@ -9,7 +9,7 @@ cd $CODEBUILD_SRC_DIR/src
 alias wp='php wp-cli.phar --allow-root'
 echo "Running script: $(basename -- "$0")"
 
+echo "Install WordPress Themes..."
 
-
- 
-
+echo "Install WordPress Default Theme: twentynineteen"
+wp theme install twentynineteen 
