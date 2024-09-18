@@ -8,11 +8,11 @@ alias wp='php wp-cli.phar --allow-root'
 echo "Running script: $(basename -- "$0")"
 
 echo "Retrieve values from AWS Secret Manager..."
-DB_HOST=$(aws secretsmanager get-secret-value --secret-id $SECRET_MANAGER_ARN --query 'SecretString' | jq -r 'fromjson | .DatabaseHost')
-DB_PORT=$(aws secretsmanager get-secret-value --secret-id $SECRET_MANAGER_ARN --query 'SecretString' | jq -r 'fromjson | .DatabasePort')
-DB_NAME=$(aws secretsmanager get-secret-value --secret-id $SECRET_MANAGER_ARN --query 'SecretString' | jq -r 'fromjson | .DatabaseName')
-DB_USERNAME=$(aws secretsmanager get-secret-value --secret-id $SECRET_MANAGER_ARN --query 'SecretString' | jq -r 'fromjson | .DatabaseUserName')
-DB_PASSWORD=$(aws secretsmanager get-secret-value --secret-id $SECRET_MANAGER_ARN --query 'SecretString' | jq -r 'fromjson | .DatabasePassword')
+DB_HOST="database-1.cr8mc00ii2ac.eu-north-1.rds.amazonaws.com"  # Hostname of the database
+DB_PORT="3306"                     # Default MySQL port
+DB_NAME="mydb"             # Name of your WordPress database
+DB_USERNAME="Deep"       # Database user
+DB_PASSWORD="8SjhoTfVz2GAcADVJcor"    # User's password
 
 echo "Installing WordPress CLI..."
 curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
