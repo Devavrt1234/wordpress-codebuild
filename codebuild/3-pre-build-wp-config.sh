@@ -17,18 +17,7 @@ if [ "x$BUILD_ENV" = "xprod" ]; then
 else
     echo "WordPress configurations for development"
     # Debug in dev
-    wp config set WP_DEBUG true --raw
+
 fi
 
-# WordPress Salts
-# https://api.wordpress.org/secret-key/1.1/salt/
-wp config set AUTH_KEY '<SECRET-KEY-HERE>'
-wp config set SECURE_AUTH_KEY '<SECRET-KEY-HERE>'
-wp config set LOGGED_IN_KEY '<SECRET-KEY-HERE>'
-wp config set NONCE_KEY '<SECRET-KEY-HERE>'
-wp config set AUTH_SALT '<SECRET-KEY-HERE>'
-wp config set SECURE_AUTH_SALT '<SECRET-KEY-HERE>'
-wp config set LOGGED_IN_SALT '<SECRET-KEY-HERE>'
-wp config set NONCE_SALT '<SECRET-KEY-HERE>'
-wp config set WP_CACHE_KEY_SALT '<SECRET-KEY-HERE>'
 
